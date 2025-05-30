@@ -1,0 +1,226 @@
+/* === ESTILO GLOBAL === */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para todas las páginas excepto index */
+    color: #5c2a1d; /* Marrón claro */
+}
+
+body.home {
+    background-color: unset;
+    color: white;
+}
+
+.background {
+    background: url('Imagenes/cafe9.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main-title {
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    color: white; /* Asegura blanco en el título */
+}
+
+.slogan {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 1.5em;
+    color: white; /* Asegura blanco en el texto */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* === HEADER Y NAV === */
+
+header, .fixed-header {
+    background-color: #d14747; /* Rojo suave */
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* === SECCIONES GENERALES === */
+
+.intro, .video-section, .about {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.video-section iframe {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* === FOOTER === */
+
+footer {
+    background-color: #d14747; /* Rojo suave */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* === GALERÍA === */
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #d14747; /* Rojo suave */
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.gallery {
+    padding-top: 120px;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.image-card {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+.image-card img:hover {
+    filter: brightness(0.85);
+}
+
+.image-card p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #5c2a1d; /* Marrón claro */
+}
+
+/* === BLOG === */
+
+.blog-content {
+    padding-top: 120px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.blog-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.blog-text p {
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #5c2a1d; /* Marrón claro */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
