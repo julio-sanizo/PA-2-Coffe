@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto </title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #fff;
+      color: #5c2a1d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+header.fixed-header {
+    background-color: #d14747;
+    color: white;
+    padding: 10px 0; 
+    text-align: center;
+}
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: #d14747;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #b43a3a;
+    }
+
+    .map {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .map iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 300px;
+      border: 0;
+    }
+
+    .contact-image {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-image img {
+      width: 300px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #d14747;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="fixed-header">
+    <h1>Café Sello Rojo</h1>
+    <nav>
+      <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-info">
+      <h2>Contáctanos</h2>
+      <p><strong>Dirección:</strong> Buenaventura, Valle del Cauca, Colombia</p>
+      <p><strong>Teléfono:</strong> 01 8000 51 07 77</p>
+      <p><strong>Email:</strong> cafesellorojo@elmejorcafe.pe</p>
+    </section>
+
+    <section class="contact-form">
+      <input type="text" placeholder="Nombres">
+      <input type="tel" placeholder="Celular">
+      <input type="text" placeholder="RUC">
+      <input type="email" placeholder="Correo">
+      <textarea placeholder="Comentario"></textarea>
+      <button type="button">Enviar</button>
+    </section>
+
+    <section class="map">
+      <iframe src="https://www.google.com/maps?q=Buenaventura,+Valle+del+Cauca,+Colombia&output=embed"></iframe>
+    </section>
+
+    <section class="contact-image">
+      <img src="Imagenes/cafe8.png" alt="Café Sello Rojo">
+    </section>
+  </main>
+
+  <footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/CafeSelloRojo" target="_blank"><img src="Imagenes/fb.png" alt="Facebook"></a>
+      <a href="https://x.com/cafesellorojo/" target="_blank"><img src="Imagenes/x.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/cafe.sellorojo/" target="_blank"><img src="Imagenes/insta.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2025 Café Sello Rojo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
